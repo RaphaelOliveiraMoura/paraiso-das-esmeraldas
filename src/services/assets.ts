@@ -3,7 +3,7 @@ export const assets = {
     src: "/entrada.jpg",
     alt: "Entrada do Paraíso das Esmeraldas",
   },
-  visaoAerea: [
+  gallery: [
     {
       src: "/visao-de-cima.jpg",
       alt: "Visão aérea do Paraíso das Esmeraldas",

@@ -35,3 +35,40 @@ export const financial = {
     },
   ],
 };
+
+export const busLines: BusLine[] = [
+  {
+    label: "Linha 6981 - CACHOEIRINHA / METRÔ",
+    values: {
+      "Segunda a Sexta": [
+        { time: "05:30", arrival: "07:40" },
+        { time: "10:30", arrival: "12:40" },
+        { time: "15:10", arrival: "17:20" },
+      ],
+      Sábado: [
+        { time: "07:00", arrival: "09:10" },
+        { time: "16:30", arrival: "18:40" },
+      ],
+      Domingo: [
+        { time: "08:00", arrival: "10:10" },
+        { time: "18:00", arrival: "20:10" },
+      ],
+    },
+  },
+  {
+    label: "ELIZEU SÃO JOSÉ / ESMERALDAS",
+    values: {
+      "Segunda a Sábado": [
+        { time: "06:50", arrival: "11:00" },
+        { time: "12:30", arrival: "17:00" },
+      ],
+    },
+  },
+];
+
+type BusLine = {
+  label: string;
+  values: {
+    [key: string]: { time: string; arrival: string }[];
+  };
+};
