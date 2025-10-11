@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://paraiso-das-esmeraldas.vercel.app/sitemap.xml

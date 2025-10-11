@@ -19,6 +19,7 @@ import { HiLocationMarker } from "react-icons/hi";
 import { MdEmail, MdPhone } from "react-icons/md";
 import { assets } from "@/services/assets";
 import { cn } from "@/services/classname";
+import { formatPhoneToWhatsApp } from "@/services/phone";
 import { address, busLines, contacts, financial } from "./data";
 
 export default function Home() {
@@ -105,10 +106,15 @@ const Header = () => {
         {/* Contato rápido - Desktop */}
         <div className="hidden lg:block text-right">
           <div className="bg-white/10 backdrop-blur-sm rounded-lg p-3 space-y-1">
-            <div className="flex items-center justify-end gap-2 text-sm font-medium">
+            <a
+              href={formatPhoneToWhatsApp(contacts.phone)}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center justify-end gap-2 text-sm font-medium hover:text-secondary transition-colors duration-200"
+            >
               <MdPhone className="w-4 h-4" />
               <span>{contacts.phone}</span>
-            </div>
+            </a>
           </div>
         </div>
       </div>
@@ -148,10 +154,15 @@ const Header = () => {
             Contatos e Taxas
           </a>
           <div className="border-t border-emerald-500 pt-2 mt-3">
-            <div className="flex items-center gap-2 text-sm text-emerald-100">
+            <a
+              href={formatPhoneToWhatsApp(contacts.phone)}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-2 text-sm text-emerald-100 hover:text-white transition-colors duration-200"
+            >
               <MdPhone className="w-4 h-4" />
               <span>{contacts.phone}</span>
-            </div>
+            </a>
             <div className="flex items-center gap-2 text-xs text-emerald-200 mt-1">
               <MdEmail className="w-3 h-3" />
               <span>{contacts.email}</span>
@@ -200,7 +211,9 @@ const Hero = () => {
                 Ver Galeria
               </a>
               <a
-                href="#contatos"
+                href={formatPhoneToWhatsApp(contacts.phone)}
+                target="_blank"
+                rel="noopener noreferrer"
                 className="inline-flex items-center justify-center gap-2 border-2 border-primary text-primary hover:bg-primary hover:text-white px-6 py-3 rounded-lg font-medium transition-all duration-300"
               >
                 <FaPhone className="w-4 h-4" />
@@ -542,7 +555,9 @@ const Footer = () => {
                 <div className="group">
                   <p className="font-medium">Telefone:</p>
                   <a
-                    href={`tel:${contacts.phone}`}
+                    href={formatPhoneToWhatsApp(contacts.phone)}
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="text-gray-300 hover:text-primary transition-colors duration-200"
                   >
                     {contacts.phone}
