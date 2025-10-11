@@ -5,11 +5,13 @@
  */
 export const formatPhoneToWhatsApp = (phone: string): string => {
   // Remove todos os caracteres que não são números
-  const cleanPhone = phone.replace(/\D/g, '');
-  
+  const cleanPhone = phone.replace(/\D/g, "");
+
   // Se o número não começar com 55 (código do Brasil), adiciona
-  const formattedPhone = cleanPhone.startsWith('55') ? cleanPhone : `55${cleanPhone}`;
-  
+  const formattedPhone = cleanPhone.startsWith("55")
+    ? cleanPhone
+    : `55${cleanPhone}`;
+
   return `https://wa.me/${formattedPhone}`;
 };
 
@@ -19,5 +21,5 @@ export const formatPhoneToWhatsApp = (phone: string): string => {
  * @returns URL tel: formatada
  */
 export const formatPhoneToTel = (phone: string): string => {
-  return `tel:${phone.replace(/\D/g, '')}`;
+  return `tel:${phone.replace(/\D/g, "")}`;
 };

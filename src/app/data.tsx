@@ -1,5 +1,5 @@
 export const contacts = {
-  email: "condomínioparaisodasesmeraldas@gmail.com",
+  email: "condominioparaisodasesmeraldas@gmail.com",
   phone: "(31) 9 9747-4933",
 
   complementaryContacts: {

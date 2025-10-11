@@ -14,9 +14,10 @@ import {
   FaMapMarkerAlt,
   FaPhone,
   FaRoute,
+  FaWhatsapp,
 } from "react-icons/fa";
 import { HiLocationMarker } from "react-icons/hi";
-import { MdEmail, MdPhone } from "react-icons/md";
+import { MdEmail } from "react-icons/md";
 import { assets } from "@/services/assets";
 import { cn } from "@/services/classname";
 import { formatPhoneToWhatsApp } from "@/services/phone";
@@ -112,7 +113,7 @@ const Header = () => {
               rel="noopener noreferrer"
               className="flex items-center justify-end gap-2 text-sm font-medium hover:text-secondary transition-colors duration-200"
             >
-              <MdPhone className="w-4 h-4" />
+              <FaWhatsapp className="w-4 h-4" />
               <span>{contacts.phone}</span>
             </a>
           </div>
@@ -160,7 +161,7 @@ const Header = () => {
               rel="noopener noreferrer"
               className="flex items-center gap-2 text-sm text-emerald-100 hover:text-white transition-colors duration-200"
             >
-              <MdPhone className="w-4 h-4" />
+              <FaWhatsapp className="w-4 h-4" />
               <span>{contacts.phone}</span>
             </a>
             <div className="flex items-center gap-2 text-xs text-emerald-200 mt-1">
@@ -216,7 +217,7 @@ const Hero = () => {
                 rel="noopener noreferrer"
                 className="inline-flex items-center justify-center gap-2 border-2 border-primary text-primary hover:bg-primary hover:text-white px-6 py-3 rounded-lg font-medium transition-all duration-300"
               >
-                <FaPhone className="w-4 h-4" />
+                <FaWhatsapp className="w-4 h-4" />
                 Entre em Contato
               </a>
             </div>
@@ -558,8 +559,9 @@ const Footer = () => {
                     href={formatPhoneToWhatsApp(contacts.phone)}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-gray-300 hover:text-primary transition-colors duration-200"
+                    className="flex items-center gap-2 text-gray-300 hover:text-primary transition-colors duration-200"
                   >
+                    <FaWhatsapp className="w-4 h-4" />
                     {contacts.phone}
                   </a>
                 </div>
