@@ -249,14 +249,14 @@ const Features = () => {
   const features = [
     {
       icon: FaHome,
-      title: "Conforte e Tranquilidade",
+      title: "Conforto e Tranquilidade",
       description: "Local tranquilo e seguro com uma bela paisagem",
       color: "from-primary to-primary/80",
     },
     {
       icon: HiLocationMarker,
       title: "Localização Privilegiada",
-      description: "Próximo a Esmeraldas com fácil acesso à BR-040",
+      description: "Próximo a Esmeraldas com fácil acesso à MG-060",
       color: "from-secondary to-secondary/80",
     },
     {
@@ -275,8 +275,8 @@ const Features = () => {
             Por que escolher o Paraíso das Esmeraldas?
           </h2>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-            Descubra as vantagens de morar em um dos condomínios mais bem
-            localizados da região
+            Descubra as vantagens de morar no condomínio mais bem localizado da
+            região
           </p>
         </div>
 
