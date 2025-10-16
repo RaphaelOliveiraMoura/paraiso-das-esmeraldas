@@ -9,7 +9,7 @@ export const contacts = {
 };
 
 export const address = {
-  address: "Paraíso das Esmeradas - Condomínio Urbano, MG-060 - Esmeraldas, MG",
+  address: "Paraíso das Esmeradas - Condomínio, MG-060 - Esmeraldas, MG",
   iframe: (
     <iframe
       title="Localização do Condomínio Paraíso das Esmeraldas"

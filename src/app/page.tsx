@@ -52,9 +52,7 @@ const Header = () => {
             <h1 className="text-2xl font-bold tracking-wide">
               Paraíso das Esmeraldas
             </h1>
-            <p className="text-sm text-emerald-100 font-medium">
-              Condomínio Urbano
-            </p>
+            <p className="text-sm text-emerald-100 font-medium">Condomínio</p>
           </div>
         </div>
 
@@ -189,7 +187,7 @@ const Hero = () => {
             <div className="space-y-4">
               <div className="inline-flex items-center gap-2 bg-primary/10 text-primary px-4 py-2 rounded-full text-sm font-medium">
                 <FaHome className="w-4 h-4" />
-                <span>Condomínio Urbano</span>
+                <span>Condomínio</span>
               </div>
               <h1 className="font-bold text-4xl md:text-6xl leading-tight">
                 <span className="text-gray-800">Paraíso das</span>
