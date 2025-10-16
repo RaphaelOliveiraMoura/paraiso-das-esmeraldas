@@ -9,7 +9,7 @@ export const contacts = {
 };
 
 export const address = {
-  address: "Paraíso das Esmeradas - Condomínio Rural, MG-060 - Esmeraldas, MG",
+  address: "Paraíso das Esmeradas - Condomínio Urbano, MG-060 - Esmeraldas, MG",
   iframe: (
     <iframe
       title="Localização do Condomínio Paraíso das Esmeraldas"
@@ -39,6 +39,14 @@ export const financial = {
 export const busLines: BusLine[] = [
   {
     label: "Linha 6981 - CACHOEIRINHA / METRÔ",
+    frame: (
+      <iframe
+        title="Linha 6981 - CACHOEIRINHA / METRÔ"
+        src="https://www.google.com/maps/d/embed?mid=1_636FopH1XFYOr_zf4AbuV801lq51W8&ehbc=2E312F"
+        width="100%"
+        height="400"
+      ></iframe>
+    ),
     values: {
       "Segunda a Sexta": [
         { time: "05:30", arrival: "07:40" },
@@ -68,6 +76,7 @@ export const busLines: BusLine[] = [
 
 type BusLine = {
   label: string;
+  frame?: React.ReactNode;
   values: {
     [key: string]: { time: string; arrival: string }[];
   };

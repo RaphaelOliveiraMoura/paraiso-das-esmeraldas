@@ -53,7 +53,7 @@ const Header = () => {
               Paraíso das Esmeraldas
             </h1>
             <p className="text-sm text-emerald-100 font-medium">
-              Condomínio Rural
+              Condomínio Urbano
             </p>
           </div>
         </div>
@@ -189,7 +189,7 @@ const Hero = () => {
             <div className="space-y-4">
               <div className="inline-flex items-center gap-2 bg-primary/10 text-primary px-4 py-2 rounded-full text-sm font-medium">
                 <FaHome className="w-4 h-4" />
-                <span>Condomínio Rural</span>
+                <span>Condomínio Urbano</span>
               </div>
               <h1 className="font-bold text-4xl md:text-6xl leading-tight">
                 <span className="text-gray-800">Paraíso das</span>
@@ -400,7 +400,9 @@ const BusSection = () => {
                   </div>
                   <div className="aspect-[4/3] w-full relative">
                     <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-secondary/5 rounded-xl"></div>
-                    <ImagePlaceholder className="w-full h-full rounded-xl border-2 border-gray-100" />
+                    {line.frame || (
+                      <ImagePlaceholder className="w-full h-full rounded-xl border-2 border-gray-100" />
+                    )}
                   </div>
                   <p className="text-sm text-gray-600 mt-3 text-center font-medium">
                     Mapa do trajeto e pontos de parada
